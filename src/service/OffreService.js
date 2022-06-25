@@ -20,6 +20,7 @@ export const getOffers = async () => {
 // }
 
 export const deleteOffer = async (offer) => {
+    
     await fetch(`http://localhost:8080/api/Offre/deleteOffre/${offer.id}`, {
         method: 'DELETE'
     });
